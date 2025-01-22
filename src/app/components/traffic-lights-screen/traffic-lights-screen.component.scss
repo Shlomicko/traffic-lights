@@ -1,0 +1,11 @@
+.toolbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.traffic-lights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+}

@@ -1,0 +1,7 @@
+<div class="traffic-light">
+  <div
+    *ngFor="let color of lightsColors"
+    [class.active]="currentColor.includes(color)"
+    [class]="color"
+  ></div>
+</div>
