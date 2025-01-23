@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrafficLightComponent } from './components/traffic-light/traffic-light.component';
 import { TrafficLightsScreenComponent } from './components/traffic-lights-screen/traffic-lights-screen.component';
+import {ScrollingModule} from "@angular/cdk/scrolling";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { TrafficLightsScreenComponent } from './components/traffic-lights-screen
   ],
   imports: [
     BrowserModule,
+    ScrollingModule,
     AppRoutingModule
   ],
   providers: [],

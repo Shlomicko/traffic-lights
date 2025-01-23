@@ -4,8 +4,18 @@
   margin-bottom: 20px;
 }
 
+.traffic-lights-container {
+  height: 600px;
+  width: 100%;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+
 .traffic-lights {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
+  padding: 10px;
 }
+

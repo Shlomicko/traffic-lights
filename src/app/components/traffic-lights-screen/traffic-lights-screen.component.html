@@ -1,12 +1,14 @@
 <div class="toolbar">
   <button (click)="toggleSynchronization()">
-    {{ isSynchronized ? 'Chaos' : 'Synchronize' }}
+    {{ isSynchronized ? "Chaos" : "Synchronize" }}
   </button>
 </div>
 
-<div class="traffic-lights">
-  <app-traffic-light
-    *ngFor="let light of [].constructor(1000); trackBy: trackByIndex"
-    [isSynchronized]="isSynchronized"
-  ></app-traffic-light>
-</div>
+<cdk-virtual-scroll-viewport [itemSize]="1" class="traffic-lights-container">
+  <div class="traffic-lights">
+    <app-traffic-light
+      *cdkVirtualFor="let light of [].constructor(1000); trackBy: trackByIndex"
+      [isSynchronized]="isSynchronized"
+    ></app-traffic-light>
+  </div>
+</cdk-virtual-scroll-viewport>
